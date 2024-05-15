@@ -1,0 +1,14 @@
+/home/jozin/Documents/_personalProjects/CSharp/consoleRPG/bin/Debug/net8.0/consoleRPG
+/home/jozin/Documents/_personalProjects/CSharp/consoleRPG/bin/Debug/net8.0/consoleRPG.deps.json
+/home/jozin/Documents/_personalProjects/CSharp/consoleRPG/bin/Debug/net8.0/consoleRPG.runtimeconfig.json
+/home/jozin/Documents/_personalProjects/CSharp/consoleRPG/bin/Debug/net8.0/consoleRPG.dll
+/home/jozin/Documents/_personalProjects/CSharp/consoleRPG/bin/Debug/net8.0/consoleRPG.pdb
+/home/jozin/Documents/_personalProjects/CSharp/consoleRPG/obj/Debug/net8.0/consoleRPG.GeneratedMSBuildEditorConfig.editorconfig
+/home/jozin/Documents/_personalProjects/CSharp/consoleRPG/obj/Debug/net8.0/consoleRPG.AssemblyInfoInputs.cache
+/home/jozin/Documents/_personalProjects/CSharp/consoleRPG/obj/Debug/net8.0/consoleRPG.AssemblyInfo.cs
+/home/jozin/Documents/_personalProjects/CSharp/consoleRPG/obj/Debug/net8.0/consoleRPG.csproj.CoreCompileInputs.cache
+/home/jozin/Documents/_personalProjects/CSharp/consoleRPG/obj/Debug/net8.0/consoleRPG.dll
+/home/jozin/Documents/_personalProjects/CSharp/consoleRPG/obj/Debug/net8.0/refint/consoleRPG.dll
+/home/jozin/Documents/_personalProjects/CSharp/consoleRPG/obj/Debug/net8.0/consoleRPG.pdb
+/home/jozin/Documents/_personalProjects/CSharp/consoleRPG/obj/Debug/net8.0/consoleRPG.genruntimeconfig.cache
+/home/jozin/Documents/_personalProjects/CSharp/consoleRPG/obj/Debug/net8.0/ref/consoleRPG.dll
