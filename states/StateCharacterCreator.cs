@@ -22,7 +22,7 @@ namespace consoleRPG
 
             this._characterList.Add(new Character(name, description));
 
-            Gui.Announcment("Character Created!");
+            Gui.Announcment("Character Created");
         }
 
         //Public methods

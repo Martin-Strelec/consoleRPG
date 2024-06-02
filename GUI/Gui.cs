@@ -39,9 +39,9 @@ namespace consoleRPG
 
         public static int GetInputInt(string message)
         {
-            int input = -2;
+            Nullable<int> input = null;
 
-            while (input == -2)
+            while (input == null)
             {
                 try
                 {
@@ -53,13 +53,13 @@ namespace consoleRPG
                     Console.WriteLine(e.Message);
                 }
             }
-            return input;
+            return input.Value;
         }
 
         public static void Announcment(string str)
         {
             Console.ForegroundColor = ConsoleColor.Yellow;
-            str = $"(~) {str}!\n";
+            str = $"\n(~) {str}!\n";
 
             Console.Write(str);
             Console.ResetColor();

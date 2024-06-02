@@ -7,11 +7,13 @@ namespace consoleRPG
     {
         //Variables
         protected ArrayList _characterList;
+        protected Character _activeCharacter;
 
         //Public methods
         public StateMainMenu(Stack<State> states, ArrayList characterList) : base(states)
         {
             this._characterList = characterList;
+            this._activeCharacter = null;
         }
 
         public override void ProcessInput(int input)
@@ -38,15 +40,42 @@ namespace consoleRPG
 
         public void StartGame()
         {
-            
+            if (this._activeCharacter == null)
+            {
+                Gui.Announcment("No ACTIVE character");
+            }
+            else
+            {
+                
+            }
         }
 
         public void SelectCharacter()
         {
-            foreach (var character in this._characterList)
+            for (int i = 0; i < this._characterList.Count; i++)
             {
-                Console.WriteLine(character.ToString());
+                Console.WriteLine($"{i}: {this._characterList[i].ToString()}");
             }
+
+            while (this._activeCharacter == null)
+            {
+                int choice = (Gui.GetInputInt("Select character"));
+                
+                try
+                {
+                    this._activeCharacter = (Character)this._characterList[choice];
+                }
+                catch
+                {
+                    Gui.Announcment("Wrong option");
+                }    
+            }
+            
+            if (this._activeCharacter != null)
+            {
+                Gui.Announcment($"Character {this._activeCharacter.ToString()} is selected");    
+            }
+            
         }
 
         public override void Update()

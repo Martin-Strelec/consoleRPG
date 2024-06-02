@@ -12,3 +12,4 @@
 /home/jozin/Documents/_personalProjects/CSharp/consoleRPG/obj/Debug/net8.0/consoleRPG.pdb
 /home/jozin/Documents/_personalProjects/CSharp/consoleRPG/obj/Debug/net8.0/consoleRPG.genruntimeconfig.cache
 /home/jozin/Documents/_personalProjects/CSharp/consoleRPG/obj/Debug/net8.0/ref/consoleRPG.dll
+/home/jozin/Documents/_personalProjects/CSharp/consoleRPG/obj/Debug/net8.0/consoleRPG.sourcelink.json
