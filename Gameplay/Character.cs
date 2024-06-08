@@ -1,3 +1,5 @@
+using System.Runtime.CompilerServices;
+
 namespace consoleRPG
 {
     class Character
@@ -28,7 +30,14 @@ namespace consoleRPG
 
         //General 
         private int _gold = 100;
+        
+        //Getters & Setters
 
+        public string Name
+        {
+            get { return this._name; }
+        }
+    
         private void CalculateExp() 
         {
             this._expMax = this._level * 100;
@@ -54,7 +63,19 @@ namespace consoleRPG
 
         public override string ToString()
         {
-            return this._name;
+            string str = $"Name: \t\t\t{this._name}\n" +
+                         $"Description: \t\t{this._description}\n" +
+                         $"Skill points: \t\t{this._skillPoints}\n" +
+                         $"Exp: \t\t\t{this._exp}/{this._expMax} {Gui.ProgressBar(this._exp, this._expMax,10)}\n\n";
+            return str;
+        }
+
+        public string ToStringBanner()
+        {
+            string str = $"Name: {this._name} | Skill points: {this._skillPoints} | " +
+                         $"EXP{Gui.ProgressBar(this._exp, this._expMax, 10)}";
+                         
+            return str;
         }
     }
 }
