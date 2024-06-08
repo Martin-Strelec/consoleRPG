@@ -46,7 +46,7 @@ namespace consoleRPG
             }
             else
             {
-                
+                this._states.Push(new StateGame(this._states, this._activeCharacter));
             }
         }
 
@@ -54,7 +54,8 @@ namespace consoleRPG
         {
             for (int i = 0; i < this._characterList.Count; i++)
             {
-                Console.WriteLine($"{i}: {this._characterList[i].ToString()}");
+                Gui.Announcment($"{i}:");
+                Console.WriteLine($"{this._characterList[i].ToString()}");
             }
 
             while (this._activeCharacter == null)
@@ -73,16 +74,23 @@ namespace consoleRPG
             
             if (this._activeCharacter != null)
             {
-                Gui.Announcment($"Character {this._activeCharacter.ToString()} is selected");    
+                Gui.Announcment($"Character {this._activeCharacter.Name} is selected");    
             }
             
         }
 
         public override void Update()
         {
-
-            Gui.Title("Main Menu class");
+            //Gui.Title("Main Menu class");
             Gui.MenuTitle("Main Menu");
+            if (this._activeCharacter != null)
+            {
+                Console.WriteLine(this._activeCharacter.ToStringBanner());
+            }
+            else
+            {
+                Gui.Error("No character selected!");
+            }
             Gui.MenuOption("New Game","Create Character","Select Characters", "Exit");
 
             this.ProcessInput(Gui.GetInputInt("Input"));
