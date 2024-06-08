@@ -6,12 +6,12 @@ namespace consoleRPG
     {
 
         //Variables
-        protected ArrayList _characterList;
+        protected Character _character;
 
         //Public methods
-        public StateGame(Stack<State> states, ArrayList characterList) : base(states)
+        public StateGame(Stack<State> states, Character activeCharacter) : base(states)
         {
-            this._characterList = characterList;
+            this._character = activeCharacter;
         }
 
         public override void ProcessInput(int input)
@@ -19,12 +19,9 @@ namespace consoleRPG
             switch (input)
             {
                 case 1:
-                    this._states.Push(new StateCharacterCreator(this._states, this._characterList));
+                    Console.WriteLine(this._character.ToString());
                     break;
                 case 2:
-                    Console.WriteLine(this._characterList.Count);
-                    break;
-                case 3:
                     this._end = true;
                     break;
                 default:
@@ -37,7 +34,7 @@ namespace consoleRPG
         {
             Gui.Title("Game");
             Gui.MenuTitle("Main Menu");
-            Gui.MenuOption("Create Character","List Characters", "Exit");
+            Gui.MenuOption("Character Stats", "Exit");
             
             this.ProcessInput(Gui.GetInputInt("Input"));
         }
