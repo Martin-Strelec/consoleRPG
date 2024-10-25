@@ -43,6 +43,8 @@ namespace consoleRPG
             if (this._activeCharacter == null)
             {
                 Gui.Announcment("No ACTIVE character");
+                Console.Read();
+                Gui.Announcment("No ACTIVE character");
             }
             else
             {
@@ -52,36 +54,47 @@ namespace consoleRPG
 
         public void SelectCharacter()
         {
-            for (int i = 0; i < this._characterList.Count; i++)
+           
+            if (this._characterList.Count != 0)
             {
-                Gui.Announcment($"{i}:");
-                Console.WriteLine($"{this._characterList[i].ToString()}");
-            }
-
-            while (this._activeCharacter == null)
-            {
-                int choice = (Gui.GetInputInt("Select character"));
-                
-                try
+                Console.Clear();
+                for (int i = 0; i < this._characterList.Count; i++)
                 {
-                    this._activeCharacter = (Character)this._characterList[choice];
+                    Gui.Announcment($"{i}:");
+                    Console.WriteLine($"{this._characterList[i].ToString()}");
                 }
-                catch
+
+                while (this._activeCharacter == null)
                 {
-                    Gui.Announcment("Wrong option");
-                }    
+                    int choice = (Gui.GetInputInt("Select character"));
+
+                    try
+                    {
+                        this._activeCharacter = (Character)this._characterList[choice];
+                    }
+                    catch
+                    {
+                        Gui.Announcment("Wrong option");
+                    }
+                }
+
+                if (this._activeCharacter != null)
+                {
+                    Gui.Announcment($"Character {this._activeCharacter.Name} is selected");
+                }
             }
-            
-            if (this._activeCharacter != null)
+            else
             {
-                Gui.Announcment($"Character {this._activeCharacter.Name} is selected");    
+                Console.Clear();
+                Gui.Announcment("No characters created!");
+                Console.ReadLine();
             }
-            
         }
 
         public override void Update()
         {
             //Gui.Title("Main Menu class");
+            Console.Clear();
             Gui.MenuTitle("Main Menu");
             if (this._activeCharacter != null)
             {

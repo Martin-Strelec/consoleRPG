@@ -19,6 +19,7 @@ namespace consoleRPG
             Gui.GetInput("Input character name");
             name = Console.ReadLine();
             Console.Clear();
+            Gui.Announcment($"Character name: {name}");
             Gui.GetInput("Input character description");
             description = Console.ReadLine();
 
@@ -55,6 +56,7 @@ namespace consoleRPG
 
         public override void Update()
         {
+            Console.Clear();
             Gui.Title("Character Creator");
             Gui.MenuTitle("Choose");
             Gui.MenuOption("Create Character","Edit Character","Delete Character", "Exit");

@@ -32,6 +32,7 @@ namespace consoleRPG
 
         public override void Update()
         {
+            Console.Clear();
             Gui.Title("Game");
             Gui.MenuTitle("Main Menu");
             Gui.MenuOption("Character Stats", "Exit");
