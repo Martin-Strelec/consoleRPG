@@ -15,8 +15,10 @@ namespace consoleRPG
             string name;
             string description;
 
+            Console.Clear();
             Gui.GetInput("Input character name");
             name = Console.ReadLine();
+            Console.Clear();
             Gui.GetInput("Input character description");
             description = Console.ReadLine();
 

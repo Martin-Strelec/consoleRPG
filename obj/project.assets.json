@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "/home/jozin/.nuget/packages/": {}
+    "/home/jemand/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/jozin/Documents/_personalProjects/CSharp/consoleRPG/consoleRPG.csproj",
+      "projectUniqueName": "/home/jemand/Documents/personalProjects/CSharp/consoleRPG/consoleRPG.csproj",
       "projectName": "consoleRPG",
-      "projectPath": "/home/jozin/Documents/_personalProjects/CSharp/consoleRPG/consoleRPG.csproj",
-      "packagesPath": "/home/jozin/.nuget/packages/",
-      "outputPath": "/home/jozin/Documents/_personalProjects/CSharp/consoleRPG/obj/",
+      "projectPath": "/home/jemand/Documents/personalProjects/CSharp/consoleRPG/consoleRPG.csproj",
+      "packagesPath": "/home/jemand/.nuget/packages/",
+      "outputPath": "/home/jemand/Documents/personalProjects/CSharp/consoleRPG/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/jozin/.nuget/NuGet/NuGet.Config"
+        "/home/jemand/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -38,6 +38,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -59,7 +64,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/home/jozin/.dotnet/sdk/8.0.300/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.403/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
