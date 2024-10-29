@@ -14,88 +14,96 @@ namespace consoleRPG
 
         public static int GetInputInt(string message)
         {
-            Nullable<int> input = null;
+            int input;
 
-            while (input == null)
+            try
             {
-                try
-                {
-                    Gui.GetInput(message);
-                    input = int.Parse(Console.ReadLine());
-                }
-                catch (Exception e)
-                {
-                    Console.WriteLine(e.Message);
-                }
+                Gui.GetInput(message);
+                input = int.Parse(Console.ReadLine());
+                return input;
             }
-            return input.Value;
-        }
-        
-        //Announcments
-        public static void Title(string str)
-        {
-            Console.ForegroundColor = ConsoleColor.DarkMagenta;
-            str = $"==== {str} ====\n\n";
-
-            Console.Write(str);
-            Console.ResetColor();
-        }
-
-        public static void MenuTitle(string str)
-        {
-            Console.ForegroundColor = ConsoleColor.Cyan;
-            str = $"=== {str}\n";
-
-            Console.Write(str);
-            Console.ResetColor();
-        }
-
-        public static void MenuOption(params string[] str)
-        {
-            for (int i = 1; i <= str.Length; i++)
+            catch (FormatException e)
             {
-                Console.Write($"- ({i}): {str[i-1]}\n");
+                Console.Clear();
+                Console.WriteLine("Nothing entered!");
+                Gui.PressKeyToContinue();
+                return -1;
             }
+            
         }
-        
-        public static void Announcment(string str)
-        {
-            Console.ForegroundColor = ConsoleColor.Yellow;
-            str = $"\n(~) {str}\n";
+            
 
-            Console.Write(str);
-            Console.ResetColor();
-        }
-        
-        public static void Error(string str)
-        {
-            Console.ForegroundColor = ConsoleColor.Red;
-            str = $"(!) {str}\n";
-
-            Console.Write(str);
-            Console.ResetColor();
-        }
-        
-        //Visual guides
-        public static string ProgressBar(int min, int max, int width)
-        {
-            double percentage = (double) min / max;
-            int done = Convert.ToInt32(percentage * width);
-            int undone = width - done;
-
-            string bar = "[";
-            for (int i = 0; i < done; i++)
-            {
-                bar += "*";
-            }
-            for (int i = 0; i < undone; i++)
-            {
-                bar += "-";
-            }
-            bar += "]";
-
-            return bar;
-        }
-
+    //Announcments
+    public static void PressKeyToContinue()
+    {
+        Console.ForegroundColor = ConsoleColor.Yellow;
+        Console.Write("==> Press any key to continue");
+        Console.ReadKey();
     }
+    public static void Title(string str)
+    {
+        Console.ForegroundColor = ConsoleColor.DarkMagenta;
+        str = $"==== {str} ====\n\n";
+
+        Console.Write(str);
+        Console.ResetColor();
+    }
+
+    public static void MenuTitle(string str)
+    {
+        Console.ForegroundColor = ConsoleColor.Cyan;
+        str = $"=== {str}\n";
+
+        Console.Write(str);
+        Console.ResetColor();
+    }
+
+    public static void MenuOption(params string[] str)
+    {
+        for (int i = 1; i <= str.Length; i++)
+        {
+            Console.Write($"- ({i}): {str[i - 1]}\n");
+        }
+    }
+
+    public static void Announcment(string str)
+    {
+        Console.ForegroundColor = ConsoleColor.Yellow;
+        str = $"\n(~) {str}\n";
+
+        Console.Write(str);
+        Console.ResetColor();
+    }
+
+    public static void Error(string str)
+    {
+        Console.ForegroundColor = ConsoleColor.Red;
+        str = $"(!) {str}\n";
+
+        Console.Write(str);
+        Console.ResetColor();
+    }
+
+    //Visual guides
+    public static string ProgressBar(int min, int max, int width)
+    {
+        double percentage = (double)min / max;
+        int done = Convert.ToInt32(percentage * width);
+        int undone = width - done;
+
+        string bar = "[";
+        for (int i = 0; i < done; i++)
+        {
+            bar += "*";
+        }
+        for (int i = 0; i < undone; i++)
+        {
+            bar += "-";
+        }
+        bar += "]";
+
+        return bar;
+    }
+
+}
 }

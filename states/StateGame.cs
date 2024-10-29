@@ -36,8 +36,16 @@ namespace consoleRPG
             Gui.Title("Game");
             Gui.MenuTitle("Main Menu");
             Gui.MenuOption("Character Stats", "Exit");
-            
-            this.ProcessInput(Gui.GetInputInt("Input"));
+
+            int input = Gui.GetInputInt("Input");
+            if (input == -1)
+            {
+                Update();
+            }
+            else
+            {
+                ProcessInput(input);
+            }
         }
     }
 }

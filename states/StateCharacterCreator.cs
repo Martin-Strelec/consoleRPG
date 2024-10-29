@@ -61,7 +61,15 @@ namespace consoleRPG
             Gui.MenuTitle("Choose");
             Gui.MenuOption("Create Character","Edit Character","Delete Character", "Exit");
 
-            this.ProcessInput(Gui.GetInputInt("Input"));
+            int input = Gui.GetInputInt("Input");
+            if (input == -1)
+            {
+                Update();
+            }
+            else
+            {
+                ProcessInput(input);
+            }
         }
 
     }

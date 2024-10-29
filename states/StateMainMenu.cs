@@ -33,7 +33,9 @@ namespace consoleRPG
                     this._end = true;
                     break;
                 default:
+                    Console.Clear();
                     Console.WriteLine("Invalid Input!");
+                    Gui.PressKeyToContinue();
                     break;
             }
         }
@@ -42,9 +44,9 @@ namespace consoleRPG
         {
             if (this._activeCharacter == null)
             {
+                Console.Clear();
                 Gui.Announcment("No ACTIVE character");
-                Console.Read();
-                Gui.Announcment("No ACTIVE character");
+                Gui.PressKeyToContinue();
             }
             else
             {
@@ -106,7 +108,16 @@ namespace consoleRPG
             }
             Gui.MenuOption("New Game","Create Character","Select Characters", "Exit");
 
-            this.ProcessInput(Gui.GetInputInt("Input"));
+            int input = Gui.GetInputInt("Input");
+            if (input == -1) 
+            {
+                Update();
+            }
+            else
+            {
+                ProcessInput(input);
+            }
+            
         }
     }
 }

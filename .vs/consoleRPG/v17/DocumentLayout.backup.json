@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Jemand\\Documents\\_shared\\github\\Martin-Strelec\\consoleRPG\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Jemand\\Documents\\_shared\\github\\Martin-Strelec\\consoleRPG\\states\\StateCharacterCreator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:states\\StateCharacterCreator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F592393D-20A9-4490-B07A-C2D14AE0E14A}|consoleRPG.csproj|c:\\users\\jemand\\documents\\_shared\\github\\martin-strelec\\consolerpg\\gui\\gui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F592393D-20A9-4490-B07A-C2D14AE0E14A}|consoleRPG.csproj|solutionrelative:gui\\gui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Jemand\\Documents\\_shared\\github\\Martin-Strelec\\consoleRPG\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F592393D-20A9-4490-B07A-C2D14AE0E14A}|consoleRPG.csproj|c:\\users\\jemand\\documents\\_shared\\github\\martin-strelec\\consolerpg\\states\\statemainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F592393D-20A9-4490-B07A-C2D14AE0E14A}|consoleRPG.csproj|solutionrelative:states\\statemainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Jemand\\Documents\\_shared\\github\\Martin-Strelec\\consoleRPG\\states\\StateMainMenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:states\\StateMainMenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F592393D-20A9-4490-B07A-C2D14AE0E14A}|consoleRPG.csproj|c:\\users\\jemand\\documents\\_shared\\github\\martin-strelec\\consolerpg\\states\\stategame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F592393D-20A9-4490-B07A-C2D14AE0E14A}|consoleRPG.csproj|solutionrelative:states\\stategame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Jemand\\Documents\\_shared\\github\\Martin-Strelec\\consoleRPG\\states\\StateGame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:states\\StateGame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F592393D-20A9-4490-B07A-C2D14AE0E14A}|consoleRPG.csproj|c:\\users\\jemand\\documents\\_shared\\github\\martin-strelec\\consolerpg\\states\\statecharactercreator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F592393D-20A9-4490-B07A-C2D14AE0E14A}|consoleRPG.csproj|solutionrelative:states\\statecharactercreator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F592393D-20A9-4490-B07A-C2D14AE0E14A}|consoleRPG.csproj|c:\\users\\jemand\\documents\\_shared\\github\\martin-strelec\\consolerpg\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F592393D-20A9-4490-B07A-C2D14AE0E14A}|consoleRPG.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,56 +30,69 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "Gui.cs",
+              "DocumentMoniker": "C:\\Users\\Jemand\\Documents\\_shared\\github\\Martin-Strelec\\consoleRPG\\GUI\\Gui.cs",
+              "RelativeDocumentMoniker": "GUI\\Gui.cs",
+              "ToolTip": "C:\\Users\\Jemand\\Documents\\_shared\\github\\Martin-Strelec\\consoleRPG\\GUI\\Gui.cs",
+              "RelativeToolTip": "GUI\\Gui.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAswBsAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T11:56:56.993Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "StateMainMenu.cs",
               "DocumentMoniker": "C:\\Users\\Jemand\\Documents\\_shared\\github\\Martin-Strelec\\consoleRPG\\states\\StateMainMenu.cs",
               "RelativeDocumentMoniker": "states\\StateMainMenu.cs",
               "ToolTip": "C:\\Users\\Jemand\\Documents\\_shared\\github\\Martin-Strelec\\consoleRPG\\states\\StateMainMenu.cs",
               "RelativeToolTip": "states\\StateMainMenu.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAAwFcAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAwwHEAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-25T11:35:25.799Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "StateGame.cs",
               "DocumentMoniker": "C:\\Users\\Jemand\\Documents\\_shared\\github\\Martin-Strelec\\consoleRPG\\states\\StateGame.cs",
               "RelativeDocumentMoniker": "states\\StateGame.cs",
               "ToolTip": "C:\\Users\\Jemand\\Documents\\_shared\\github\\Martin-Strelec\\consoleRPG\\states\\StateGame.cs",
               "RelativeToolTip": "states\\StateGame.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAYwCgAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-25T11:35:24.653Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "StateCharacterCreator.cs",
               "DocumentMoniker": "C:\\Users\\Jemand\\Documents\\_shared\\github\\Martin-Strelec\\consoleRPG\\states\\StateCharacterCreator.cs",
               "RelativeDocumentMoniker": "states\\StateCharacterCreator.cs",
               "ToolTip": "C:\\Users\\Jemand\\Documents\\_shared\\github\\Martin-Strelec\\consoleRPG\\states\\StateCharacterCreator.cs",
               "RelativeToolTip": "states\\StateCharacterCreator.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABcAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAADUAAAAAAAAAAAAwwEAAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-25T11:35:16.986Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Jemand\\Documents\\_shared\\github\\Martin-Strelec\\consoleRPG\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\Jemand\\Documents\\_shared\\github\\Martin-Strelec\\consoleRPG\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-25T11:34:06.13Z",
               "EditorCaption": ""
