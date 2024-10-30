@@ -19,8 +19,10 @@ namespace consoleRPG
             switch (input)
             {
                 case 1:
+                    Console.Clear();
                     Console.WriteLine(this._character.ToString());
-                    break;
+                    Gui.PressKeyToContinue()
+;                    break;
                 case 2:
                     this._end = true;
                     break;
