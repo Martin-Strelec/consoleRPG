@@ -8,29 +8,30 @@ namespace consoleRPG
         //Core
         private string _name;
         private string _description;
+        //private CharacterClass;
+        private int _academicScore;
         private int _level = 0;
         private int _skillPoints = 0;
         private int _exp = 0;
         private int _expMax = 100;
-
+        
         //Attributes
-        private int _vitality = 1;
-        private int _strenght = 1;
-        private int _dexterity = 1;
-        private int _agility = 1;
-        private int _intelligence = 1;
+        private int _communication;
+        private int _physicalHealth;
+        private int _intelligence;
+        private int _mentaHealth;
+        private int _wealth;
 
         //Stats
         private int _hp = 0;
-        private int _hpMax = 10;
+        private int _hpMax = 15;
+        private int _statsMax = 10;
+        private int _socialLifeIndex = 1;
         private int _damage = 1;
         private int _damageMax = 1;
         private int _accuracy = 1;
         private int _defense = 1;
 
-        //General 
-        private int _gold = 100;
-        
         //Getters & Setters
 
         public string Name
@@ -45,11 +46,11 @@ namespace consoleRPG
 
         private void CalculateStats()
         {
-            this._hp                =this._vitality * 10;
-            this._damageMax         =this._strenght * 2;
-            this._damage            =this._strenght;
-            this._accuracy          =this._dexterity * 2;
-            this._defense           =this._agility * 2; 
+            this._damageMax         =this._physicalHealth * 2;
+            this._damage            =this._physicalHealth * 1;
+            this._accuracy          =this._intelligence * 2;
+            this._defense           =this._communication * 2; 
+            this._socialLifeIndex   = 0;
         }
 
         public Character(string name, string description)
