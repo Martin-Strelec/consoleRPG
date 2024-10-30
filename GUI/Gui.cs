@@ -43,18 +43,19 @@ namespace consoleRPG
     public static void Title(string str)
     {
         Console.ForegroundColor = ConsoleColor.DarkMagenta;
-        str = $"==== {str} ====\n\n";
+        str = $"==== {str} ====";
 
-        Console.Write(str);
+        Console.Write(String.Format("{0," + ((Console.WindowWidth / 2) + (str.Length / 2)) + "}\n",str));
         Console.ResetColor();
     }
 
     public static void MenuTitle(string str)
     {
+        
         Console.ForegroundColor = ConsoleColor.Cyan;
-        str = $"=== {str}\n";
+        str = $"=== {str} ===";
 
-        Console.Write(str);
+        Console.Write(String.Format("{0," + ((Console.WindowWidth / 2) + (str.Length / 2)) + "}\n",str));
         Console.ResetColor();
     }
 
