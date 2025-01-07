@@ -11,7 +11,7 @@ namespace consoleRPG
 
             Console.Write(str);
         }
-
+        //
         public static int GetInputInt(string message)
         {
             int input;
